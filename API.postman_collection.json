@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "cddb1cc3-346a-4a13-9260-c0e41c2d04bd",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21498931"
+	},
+	"item": [
+		{
+			"name": "cheapshark ALL DEAL",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://www.cheapshark.com/api/1.0/deals"
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark GAME BY ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/games?id=190311",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"games"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "190311"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark DEAL BY ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/deals?id=29w9gv08PYo8%2Bo%2FOHfN1fZVlm8K5EsaN5sTlSXK6eMg%3D",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"deals"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "29w9gv08PYo8%2Bo%2FOHfN1fZVlm8K5EsaN5sTlSXK6eMg%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark GAME BY TITLE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/games?title=batman&limit=5",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"games"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "batman"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark GAME BY MULTIPLE ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/games?ids=612,167613,167910,136751,107598",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"games"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "612,167613,167910,136751,107598"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark ALL STORE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://www.cheapshark.com/api/1.0/stores"
+			},
+			"response": []
+		},
+		{
+			"name": "cheapshark LAST UPDATE STORE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/stores?lastChange=",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"stores"
+					],
+					"query": [
+						{
+							"key": "lastChange",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost_Deals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=deals",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "deals"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost_DealsByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=deals&id=HhzMJAgQYGZ%2B%2BFPpBG%2BRFcuUQZJO3KXvlnyYYGwGUfU%3D",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "deals"
+						},
+						{
+							"key": "id",
+							"value": "HhzMJAgQYGZ%2B%2BFPpBG%2BRFcuUQZJO3KXvlnyYYGwGUfU%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost_GamesName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=games&name=batman",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "games"
+						},
+						{
+							"key": "name",
+							"value": "batman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost_GamesByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=games&id=139988",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "games"
+						},
+						{
+							"key": "id",
+							"value": "139988"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewrite_Deals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=deals",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "deals"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewrite_DealsByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=deals&id=HhzMJAgQYGZ%2B%2BFPpBG%2BRFcuUQZJO3KXvlnyYYGwGUfU%3D",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "deals"
+						},
+						{
+							"key": "id",
+							"value": "HhzMJAgQYGZ%2B%2BFPpBG%2BRFcuUQZJO3KXvlnyYYGwGUfU%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewrite_GamesName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=games&name=batman",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "games"
+						},
+						{
+							"key": "name",
+							"value": "batman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewrite_GamesByID Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?page=games&id=139988",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "games"
+						},
+						{
+							"key": "id",
+							"value": "139988"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "AKcfGggKYeQFlKo2i3CRyHuwhrXylZ3mIjYVuyRwNNT1fswloPIbPUSajrsSMAhX"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost/api/index.php",
+			"type": "string"
+		},
+		{
+			"key": "URL_REWRITE",
+			"value": "http://localhost/api"
+		}
+	]
+}
